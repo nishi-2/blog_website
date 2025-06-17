@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #00bcd4, #673ab7);
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero-carousel {
+  background: linear-gradient(135deg, #00bcd4, #673ab7);
+  padding: 20px;
+  text-align: center;
+  font-size: 8rem;
+  font-weight: 900;
+  color: #fdfdfd;
+  font-family: 'Fredoka One', cursive;
+  line-height: 0.8;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .hero-carousel {
+    font-size: 6rem;
+  }
+}
+
+.main-title {
+  font-size: 50px;
+  margin: 0;
+  animation: fadeIn 3s ease-out;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.nav-item {
+  display: inline-flex;
+  padding: 20px 30px;
+  border-radius: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  max-width: 90vw;
+  width: fit-content;
+  word-break: break-word;
+}
+
+.white-bg {
+  background-color: #F8F8F8;
+  color: #333;
+}
+
+.purple-bg {
+  background-color: #a3f2f5;
+  color: #333;
+}
+
+.nav-item:hover.white-bg {
+  background-color: #030963;
+  color: #ffffff;
+}
+
+.nav-item:active.white-bg {
+  background-color: #ffe058;
+  color: #000;
+}
+
+.nav-item:hover.purple-bg {
+  background-color: #2a2152;
+  color: #ffffff;
+}
+
+.nav-item:active.purple-bg {
+  background-color: #ffe058;
+  color: #222;
+}
+
+.nav-action {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  margin-left: 20px;
+}
+
+.nav-action:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.nav-action:active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+@media (max-width: 400px) {
+  .nav-item {
+    font-size: 1.1em;
+    padding: 15px 20px;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+footer {
+  background-color: #1e2a38;
+  color: #ccc;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #00bcd4;
+}
+
+.footer-brand {
+  color: #fff;
+  font-weight: bold;
+}

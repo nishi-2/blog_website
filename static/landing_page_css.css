@@ -1,0 +1,240 @@
+/* main_page_css.css */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .site-header {
+    background-color: #1e2a38;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  .main-nav a {
+    color: #fefefe;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .main-nav a:hover {
+    color: #00bcd4;
+  }
+  
+ 
+  .hero-carousel {
+    background: linear-gradient(135deg, #00bcd4, #673ab7);
+    padding: 120px 20px;
+    text-align: center;
+    font-size: 12rem;
+    font-weight: 900;
+    color: #fdfdfd;
+    position: relative;
+    font-family: 'Fredoka One', cursive;
+    line-height: 1.1;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .hero-carousel {
+        font-size: 6rem;
+    }
+}
+  
+  .main-title {
+    font-size: 100px;
+    margin: 0;
+    animation: fadeIn 3s ease-out;
+  }
+  
+  .select-section {
+    text-align: center;
+    margin: 40px 20px 20px;
+  }
+  
+  .select-title {
+    font-size: 28px;
+    color: #333;
+    border-bottom: 2px solid #00bcd4;
+    display: inline-block;
+    padding-bottom: 8px;
+  }
+  
+  .about-section {
+    max-width: 1200px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 26px;
+    color: #444;
+    margin-bottom: 12px;
+    font-weight: 700;
+    border-bottom: 2px solid #00bcd4;
+    display: inline-block;
+    padding-bottom: 6px;
+  }
+  
+  .about-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .illustrations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .illustration-item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .illustration-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .illustration-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .animated-text {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 10px 15px;
+    background-color: #fafafa;
+    margin: 0;
+    flex-shrink: 0;
+  }
+  
+  /* Full width row spanning the three item width */
+  .full-width {
+    width: calc(3 * 300px + 2 * 20px); /* 3 items + 2 gaps */
+    max-width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .full-width img {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+
+  .query-form {
+    margin-top: 50px;
+    padding: 10px;
+    background: linear-gradient(135deg, #00bcd4, #673ab7);
+    border-radius: 8px;
+  }
+  
+  .query-form h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .query-form input,
+  .query-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .query-form button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    transition: background 0.3s;
+  }
+  
+  .query-form button:hover {
+    background-color: #0097a7;
+  }
+  
+  footer {
+    background-color: #1e2a38;
+    color: #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links a {
+    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer-links a:hover {
+    color: #00bcd4;
+  }
+  
+  .footer-brand {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .illustration-item, .full-width {
+      width: 90vw !important;
+      height: auto !important;
+    }
+  
+    .illustration-item img, .full-width img {
+      height: auto !important;
+    }
+  }
+  
+  

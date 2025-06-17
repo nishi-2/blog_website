@@ -1,0 +1,112 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Learn SQL, Python, ML, DL, NLP, Statistics, and LLM with Ordinal. Interactive, colorful, and concise tutorials for modern data science learning." />
+  <title>Ordinal</title>
+  <link rel="stylesheet" href="../static/landing_page_css.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="main-nav">
+      <a href="#sql">SQL</a>
+      <a href="#python">Python</a>
+      <a href="#statistic">Statistic</a>
+      <a href="#ml">Machine Learning</a>
+      <a href="#dl">Deep Learning</a>
+      <a href="#nlp">Natural Language Processing</a>
+      <a href="#statistics">Large Language Model</a>
+      <a href="#form">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero-carousel">
+    <h1 class="main-title" id="animated-title">Ordinal</h1>
+  </section>
+
+  <section class="about-section">
+    <!--<h2 class="about-title">About Us</h2>-->
+    <p class="about-text">
+        Ordinal opens the door to mastering data science and AI with ease. Explore SQL, Python, Statistics, Machine Learning, Deep Learning, NLP, Transformers, and Large Language Models through crisp, hands-on tutorials designed to empower your learning journey.
+        <br/><br/>
+        Looking for insightful blogs, practical projects, or curated resources like top books and videos? We've got you covered! Say goodbye to endless searching — we bring the best content right to your fingertips, cutting through the noise so you can focus on what truly matters.
+    </p>
+  </section>
+
+  <section class="select-section">
+    <h2 class="select-title">Choose what you want to learn</h2>
+  </section>
+
+  <main class="container">
+    <div class="illustrations">
+      <!-- Row 1: 3 items -->
+      <div class="illustration-item" id="sql">
+        <a href="{{ url_for('general_bp.sql_page') }}"><img src="../static/landing_page_images/SQL.jpg" alt="SQL" /></a>
+        <h3 class="animated-text">SQL</h3>
+      </div>
+      <div class="illustration-item" id="python">
+        <a href="{{ url_for('general_bp.python_page') }}"><img src="../static/landing_page_images/Python.jpg" alt="Python" /></a>
+        <h3 class="animated-text">Python Programming</h3>
+      </div>
+      <div class="illustration-item" id="statistics">
+        <a href="{{ url_for('general_bp.statistics_page') }}"><img src="../static/landing_page_images/Statistics.jpg" alt="Statistics" /></a>
+        <h3 class="animated-text">Statistics</h3>
+      </div>
+      
+
+      <!-- Row 2: 3 items -->
+      <div class="illustration-item" id="ml">
+        <a href="{{ url_for('general_bp.ml_page') }}"><img src="../static/landing_page_images/ML.jpg" alt="Machine Learning" /></a>
+        <h3 class="animated-text">Machine Learning</h3>
+      </div>
+      <div class="illustration-item" id="dl">
+        <a href="{{ url_for('general_bp.dl_page') }}"><img src="../static/landing_page_images/DL.jpg" alt="Deep Learning" /></a>
+        <h3 class="animated-text">Deep Learning</h3>
+      </div>
+      <div class="illustration-item" id="nlp">
+        <a href="{{ url_for('general_bp.nlp_page') }}"><img src="../static/landing_page_images/NLP.jpg" alt="Natural Language Processing" /></a>
+        <h3 class="animated-text">Natural Language Processing</h3>
+      </div>
+      
+
+      <!-- Full width row: LLM spanning all three block widths -->
+      <div class="illustration-item full-width" id="llm">
+        <a href="{{ url_for('general_bp.llm_page') }}"><img src="../static/landing_page_images/LLM.jpg" alt="LLM" /></a>
+        <h3 class="animated-text">Transformers and Large Language Model</h3>
+      </div>
+    </div>
+
+
+    <!-- Submitting Query or Form section-->
+    <form id="form" class="query-form queryForm" action="/submit" method="POST">
+      <h2>Have a query? Let us know!</h2>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="query" placeholder="Your Query" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    
+    <div id="popup" style="display:none;">
+      <p id="popup-message"></p>
+      <button id="close-popup">Close</button>
+    </div>
+    
+    
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/nishi-2" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/nishipaul/" target="_blank">LinkedIn</a>
+      <a href="https://nishi-2.github.io/nishipaul.github.io/" target="_blank">Portfolio</a>
+    </div>
+    <p>&copy; 2025 <span class="footer-brand">Ordinal</span></p>
+  </footer>
+
+  <script src="../static/landing_page_js.js"></script>
+</body>
+</html>

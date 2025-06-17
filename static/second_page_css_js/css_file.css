@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+  }
+
+
+  .hero-carousel {
+    background: linear-gradient(135deg, #00bcd4, #673ab7);
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 900;
+    color: #fdfdfd;
+    position: relative;
+    font-family: 'Fredoka One', cursive;
+    line-height: 0.8;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .hero-carousel {
+        font-size: 6rem;
+    }
+}
+
+
+.main-title {
+    font-size: 80px;
+    margin: 0;
+    animation: fadeIn 3s ease-out;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  .left-panel {
+    width: 45%;
+  }
+  
+  .left-panel h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .left-panel p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .book-icon {
+    width: 80px;
+    margin-top: 30px;
+  }
+  
+  .right-panel {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .rule-button {
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .rule-button.red {
+    background-color: #f44336;
+  }
+  
+  .rule-button.red:hover {
+    background-color: #440e0e;
+    color: #ccc;
+  }
+  
+  .rule-button.yellow {
+    background-color: #ffeb3b;
+  }
+  
+  .rule-button.yellow:hover {
+    background-color: #4e4107;
+    color: #ccc;
+  }
+  
+  .rule-button.green {
+    background-color: #4caf50;
+  }
+  
+  .rule-button.green:hover {
+    background-color: #163618;
+    color: #ccc;
+  }
+  
+  .rule-button.blue {
+    background-color: #2196f3;
+  }
+  
+  .rule-button.blue:hover {
+    background-color: #163555;
+    color: #ccc;
+  }
+
+  .rule-button.pink {
+    background-color: #f788cc;
+  }
+  
+  .rule-button.pink:hover {
+    background-color: #610826;
+    color: #ccc;
+  }
+
+  
+  .rule-button.purple {
+    background-color: #bd57cf;
+  }
+  
+  .rule-button.purple:hover {
+    background-color: #340c46;
+    color: #ccc;
+  }
+
+
+
+  footer {
+    background-color: #1e2a38;
+    color: #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer-links a {
+    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer-links a:hover {
+    color: #00bcd4;
+  }
+  
+  .footer-brand {
+    color: #fff;
+    font-weight: bold;
+  }
+  
