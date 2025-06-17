@@ -25,7 +25,3 @@ if __name__ == "__main__":
 
     
 
-# --- FOR HOSTINGER DEPLOYMENT ONLY ---
-# The below lines ensure your WSGI server can find the app instance.
-# This does not affect local development.
-application = app  # Required by passenger_wsgi.py
